@@ -1,0 +1,488 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+=================================================
+Custom Styles
+=================================================
+*/
+
+body {
+	background: #26243b;
+	color: #dadada;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 200;
+}
+
+/*
+=================================================
+Clearfix
+=================================================
+*/
+
+.contact-clear:before,
+.contact-clear:after {
+  content: "";
+  display: table;
+}
+.contact-clear:after {
+  clear: both;
+}
+.contact-clear {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+=========================================
+Primary Header
+=========================================
+*/
+.name {
+	text-align: left;
+	font-size: 44px;
+	font-weight: 200;
+	line-height: 44px;
+	color: #dadada;
+	padding-top: 44px;
+	padding-bottom: 22px;
+	display: inline-block;
+	border-bottom: 5px solid #b29800;
+}
+
+header {
+	background-image: url("../Images/Backgrounds/Sky.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.primary-header {
+	padding-top: 170px;
+}
+header li {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+
+/*
+=========================================
+Navigation Bars
+=========================================
+*/
+.nav {
+	text-align: right;
+	padding: 44px 0;
+}
+.nav li {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+	text-transform: uppercase;
+}
+
+.nav li:last-child {
+	margin-right: 0;
+}
+
+/*
+=========================================
+Buttons
+=========================================
+*/
+.btn-default {
+	background-color: #dadada;
+	color: #26243b;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+	margin-top: 40px;
+}
+.btn-default:hover {
+	background-color: #b29800;
+}
+/*
+=========================================
+Center Focus
+=========================================
+*/
+.center-focus {
+	text-align: center;
+	padding: 22px 10px 44px 10px;
+}
+
+.border-bottom {
+	border-bottom: 2px solid #b29800;
+	padding: 20px;
+	margin: 15px;
+	font-weight: 400;
+	font-size: 25px;
+	font-style: italic;
+}
+.center-focus-p {
+	line-height: 25px;
+}
+.row {
+	min-width: auto;
+	background: #dadada;
+	color: #26243b;
+	padding: 20px 0 40px 0;
+}
+.row a {
+	color: #26243b;
+}
+
+/*
+=========================================
+Teaser Columns
+=========================================
+*/
+.teaser a:hover h3 {
+	color: #dadada;
+}
+
+/*
+=========================================
+Grid
+=========================================
+*/
+
+/* I need to make sure this all makes sense... am I clearin floats here? I don't remember! */
+
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 10px auto;
+	padding-left: 50px;
+	padding-right: 50px;
+	border: 5px;
+	width: 960px;
+}
+
+.container,
+.grid {
+	margin: 0 auto;
+	width: auto;
+	/* padding-top: 100px; */
+}
+
+.grid {
+	padding: 40px 0;
+}
+
+.col-1-3,
+.col-1-2 {
+	display: inline-block;
+	vertical-align: top;
+	padding-bottom: 80px;
+}
+.col-1-3 {
+	width: 30%;
+}
+.grid,
+.col-1-3 {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+
+/*
+=========================================
+Typography
+=========================================
+*/
+
+h1, h3, h4, h5, p {
+	margin-bottom: 15px;
+}
+h1, h3, h5 {
+	font-weight: 400;
+	line-height: 26.4px;
+}
+h3, h5 {
+	color: #b29800;
+}
+h1 {
+	font-size: 25px;
+}
+h2 {
+	font-size: 170%;
+}
+h3 {
+	font-size: 150%;
+}
+h5 {
+	font-size: 100%;
+}
+p {
+	font-weight: 200;
+	line-height: 20px;
+}
+
+/*
+=========================================
+Links
+=========================================
+*/
+a:hover {
+	color: #b29800;
+}
+a {
+	color: #dadada;
+	text-decoration: none;
+}
+
+/*
+=========================================
+Footer
+=========================================
+*/
+
+small {
+	text-align: right;
+	font-size: 75%;
+	padding-bottom: 44px;
+	float: right;
+}
+
+/*
+=========================================
+Goals
+=========================================
+*/
+.col-1-2 {
+	width: 45%;
+	margin: 0 22px;
+}
+
+/*
+=========================================
+Hobbies
+=========================================
+*/
+
+.image-wrap {
+	position: relative;
+}
+.image-descrip {
+	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	background: #26243b;
+  	color: #dadada;
+  	visibility: hidden;
+ 	opacity: 0;
+}
+.image-wrap:hover .image-descrip {
+	visibility: visible;
+	opacity: 1;
+}
+.img-img {
+	width: 100%;
+	height: 100%;
+}
+/*.grid-wrap {
+	position: relative;
+} not sure if i even need this, however, it seems logical in the HTML that I would, but it seems to do nothing when the CSS is commented out.*/
+.image-col {
+	display: inline-block;
+	vertical-align: top;
+	padding-bottom: 8px;
+	width: 30%;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.image-tiles {
+	padding-top: 88px;
+	padding-bottom: 44px;
+	padding-left: 44px;
+}
+
+/*
+=========================================
+About
+=========================================
+*/
+.paragraph {
+	margin: 22px 44px;
+	display: block;
+}
+.paragraph p {
+	margin-bottom: 22px;
+}
+.bach-image img {
+	border-radius:50%;
+	border: 1px solid #dadada;
+	vertical-align: top;
+	height: 130px;
+	float: left;
+	margin: 0 40px;
+}
+.col-2-3 {
+	display: block;
+	float: left;
+	width: 60%;
+	padding-top: 40px;
+}
+.about-images {
+	float: left;
+	width: 300px;
+	padding: 11px 22px;
+}
+.form {
+	display: block;
+	float: right;
+	width: 25%;
+	border: 1px solid #dadada;
+	border-radius: 5%;
+	padding: 40px;
+	margin-right: 30px;
+}
+.contact-clear:before,
+.contact-clear:after {
+  content: "";
+  display: table;
+}
+.contact-clear:after {
+  clear: both;
+}
+.contact-clear {
+  clear: both;
+  *zoom: 1;
+}
+input,
+select,
+textarea {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 200;
+}
+.contact-form label {
+	color:  #b29800;
+	font-weight: 400;
+	cursor: pointer; 	/*Do I need this?*/
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+	border: 1px solid #dadada;
+	border-radius: 5%;
+	display: block;
+	width: 100%;
+}
+
+/*
+=========================================
+Experiences
+=========================================
+*/
+td {
+	padding: 7px;
+	width: auto;
+}
+li {
+	list-style: circle;
+	margin: 0 44px;
+}
+table {
+	margin: 0 44px;
+}
+.col-1 {
+	font-weight: 400;
+	color: #b29800;
+}
+.li-exp {
+	font-weight: 200;
+	color: #b29800;
+	font-size: 150%;
+	padding: 44px 44px 11px 44px;
+	border-bottom: 1px solid #dadada;
+	margin-bottom: 22px;
+	width: 960px;
+	/* How do I make an indent on this so that the bottom border is not along the left margin? */
+}
+.job-title {
+	font-weight: 400;
+	font-size: 120%;
+	color: #b29800;
+	padding: 44px 0 11px 22px;
+}
+.job-title-1 {
+	font-weight: 400;
+	font-size: 120%;
+	color: #b29800;
+	padding-bottom: 11px;
+}
+
+/*
+h1 {
+	font-size: 24px;
+}
+h2 {
+	font-size: 170%;
+}
+h3 {
+	font-size: 150%;
+}
+h5 {
+	font-size: 100%;
+}
+p {
+	font-weight: 200;
+	line-height: 20px;
